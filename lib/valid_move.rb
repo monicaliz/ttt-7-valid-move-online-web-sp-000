@@ -1,5 +1,5 @@
 # code your #valid_move? method here
-require pry
+require 'pry'
 def valid_move?(board, index)
   binding.pry
   if index.between?(1, 9)
