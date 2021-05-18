@@ -3,13 +3,13 @@ require 'pry'
 def valid_move?(board, index)
   # binding.pry
   if index.between?(1, 9)
-    if !position_taken?(board, index)
+    && !position_taken?(board, index)
     return true
   else
     return false
   end
 end
-end
+
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
